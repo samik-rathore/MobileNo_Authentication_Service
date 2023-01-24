@@ -10,7 +10,7 @@ require('./db/conn');
 const FormData = require('./model/formDataSchema');
 
 app.use(express.json());
-app.use(cors({origin: ['http://localhost:3000','http://127.0.0.1:3000','https://silver-mousse-4b6bee.netlify.app/']}));
+app.use(cors({origin: '*'}));
 app.use(require('./router/routes'));
 
 const PORT = process.env.PORT || 3000;
