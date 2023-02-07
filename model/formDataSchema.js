@@ -1,39 +1,23 @@
 const mongoose = require('mongoose');
 
 const formDataSchema = new mongoose.Schema({
-    productName: {
+    fullName: {
         type: String,
         required: true
     },
-    price: {
+    company: {
+        type: String,
+        required: true
+    },
+    purposeOfVisit: {
+        type: String,
+        required: true
+    },
+    mobile: {
         type: Number,
         required: true
     },
-    orderID: {
-        type: String,
-        required: true
-    },
-    date: {
-        type: Date,
-        required: true
-    },
-    name: {
-        type: String,
-        required: true
-    },
-    phoneNumber: {
-        type: Number,
-        required: true
-    },
-    email: {
-        type: String,
-        required: true
-    },
-    address: {
-        type: String,
-        required: true
-    },
-    paymentDetails: {
+    entryTime: {
         type: String,
         required: true
     }
