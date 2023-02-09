@@ -1,5 +1,4 @@
 const dotenv = require("dotenv");
-const mongoose = require('mongoose');
 const express = require('express');
 const app = express();
 const cors = require('cors');
@@ -7,8 +6,7 @@ const cors = require('cors');
 dotenv.config();
 
 require('./db/conn');
-const FormData = require('./model/formDataSchema');
-
+console.log(process.env);
 app.use(express.json());
 app.use(cors({origin: '*'}));
 app.use(require('./router/routes'));

@@ -18,6 +18,8 @@
     "express": "^4.18.2",
     "material-ui": "^0.20.2",
     "mongoose": "^6.8.3",
-    "nodemon": "^2.0.20"
+    "mongoose-sequence": "^5.3.1",
+    "nodemon": "^2.0.20",
+    "twilio": "^4.7.2"
   }
 }
